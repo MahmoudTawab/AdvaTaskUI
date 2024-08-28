@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E0121512C7EBDC8007F17EE /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1E0121502C7EBDC8007F17EE /* SDWebImageSwiftUI */; };
+		1E0121532C7F40C4007F17EE /* PhotoListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0121522C7F40C4007F17EE /* PhotoListViewModelTests.swift */; };
+		1E0121552C7F40EB007F17EE /* PhotoDetailViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0121542C7F40EB007F17EE /* PhotoDetailViewTests.swift */; };
+		1E0121572C7F4118007F17EE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1E0121562C7F4118007F17EE /* README.md */; };
+		1E01215A2C7F450A007F17EE /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0121592C7F450A007F17EE /* Interactor.swift */; };
+		1E01215D2C7F4559007F17EE /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01215C2C7F4559007F17EE /* Presenter.swift */; };
+		1E0121602C7F4596007F17EE /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01215F2C7F4596007F17EE /* Router.swift */; };
+		1E0121622C7F45E6007F17EE /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0121612C7F45E6007F17EE /* ViewState.swift */; };
+		1E0121652C7F460E007F17EE /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0121642C7F460E007F17EE /* Assembly.swift */; };
+		1E0121672C7F4763007F17EE /* ZoomableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0121662C7F4763007F17EE /* ZoomableScrollView.swift */; };
+		1E86271C2C7EA8A8004FB801 /* AdvaTaskUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E86271B2C7EA8A8004FB801 /* AdvaTaskUIApp.swift */; };
+		1E8627202C7EA8AA004FB801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E86271F2C7EA8AA004FB801 /* Assets.xcassets */; };
+		1E8627242C7EA8AA004FB801 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E8627232C7EA8AA004FB801 /* Preview Assets.xcassets */; };
+		1E8627382C7EA8AB004FB801 /* AdvaTaskUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8627372C7EA8AB004FB801 /* AdvaTaskUIUITests.swift */; };
+		1E86273A2C7EA8AB004FB801 /* AdvaTaskUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8627392C7EA8AB004FB801 /* AdvaTaskUIUITestsLaunchTests.swift */; };
+		1E8627482C7EA9AE004FB801 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8627472C7EA9AE004FB801 /* Photo.swift */; };
+		1E86274B2C7EA9C7004FB801 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E86274A2C7EA9C7004FB801 /* NetworkService.swift */; };
+		1E86274E2C7EAABE004FB801 /* PhotoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E86274D2C7EAABE004FB801 /* PhotoListViewModel.swift */; };
+		1E86275E2C7EABF2004FB801 /* PhotoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E86275D2C7EABF2004FB801 /* PhotoListView.swift */; };
+		1E8627602C7EAC0E004FB801 /* PhotoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E86275F2C7EAC0E004FB801 /* PhotoRowView.swift */; };
+		1E8627622C7EAC46004FB801 /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8627612C7EAC46004FB801 /* PhotoDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E86272A2C7EA8AB004FB801 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E8627102C7EA8A7004FB801 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E8627172C7EA8A8004FB801;
+			remoteInfo = AdvaTaskUI;
+		};
+		1E8627342C7EA8AB004FB801 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E8627102C7EA8A7004FB801 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E8627172C7EA8A8004FB801;
+			remoteInfo = AdvaTaskUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E0121522C7F40C4007F17EE /* PhotoListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewModelTests.swift; sourceTree = "<group>"; };
+		1E0121542C7F40EB007F17EE /* PhotoDetailViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewTests.swift; sourceTree = "<group>"; };
+		1E0121562C7F4118007F17EE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1E0121592C7F450A007F17EE /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		1E01215C2C7F4559007F17EE /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		1E01215F2C7F4596007F17EE /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		1E0121612C7F45E6007F17EE /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		1E0121642C7F460E007F17EE /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		1E0121662C7F4763007F17EE /* ZoomableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableScrollView.swift; sourceTree = "<group>"; };
+		1E8627182C7EA8A8004FB801 /* AdvaTaskUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvaTaskUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E86271B2C7EA8A8004FB801 /* AdvaTaskUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvaTaskUIApp.swift; sourceTree = "<group>"; };
+		1E86271F2C7EA8AA004FB801 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E8627212C7EA8AA004FB801 /* AdvaTaskUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AdvaTaskUI.entitlements; sourceTree = "<group>"; };
+		1E8627232C7EA8AA004FB801 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1E8627292C7EA8AB004FB801 /* AdvaTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvaTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E8627332C7EA8AB004FB801 /* AdvaTaskUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvaTaskUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E8627372C7EA8AB004FB801 /* AdvaTaskUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvaTaskUIUITests.swift; sourceTree = "<group>"; };
+		1E8627392C7EA8AB004FB801 /* AdvaTaskUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvaTaskUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1E8627472C7EA9AE004FB801 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		1E86274A2C7EA9C7004FB801 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		1E86274D2C7EAABE004FB801 /* PhotoListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoListViewModel.swift; sourceTree = "<group>"; };
+		1E86275D2C7EABF2004FB801 /* PhotoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListView.swift; sourceTree = "<group>"; };
+		1E86275F2C7EAC0E004FB801 /* PhotoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRowView.swift; sourceTree = "<group>"; };
+		1E8627612C7EAC46004FB801 /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E8627152C7EA8A8004FB801 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E0121512C7EBDC8007F17EE /* SDWebImageSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E8627262C7EA8AB004FB801 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E8627302C7EA8AB004FB801 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E0121582C7F44D1007F17EE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1E0121592C7F450A007F17EE /* Interactor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1E01215B2C7F454A007F17EE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1E01215C2C7F4559007F17EE /* Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1E01215E2C7F4587007F17EE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1E01215F2C7F4596007F17EE /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1E0121632C7F4602007F17EE /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				1E0121642C7F460E007F17EE /* Assembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		1E86270F2C7EA8A7004FB801 = {
+			isa = PBXGroup;
+			children = (
+				1E86271A2C7EA8A8004FB801 /* AdvaTaskUI */,
+				1E86272C2C7EA8AB004FB801 /* AdvaTaskUITests */,
+				1E8627362C7EA8AB004FB801 /* AdvaTaskUIUITests */,
+				1E8627192C7EA8A8004FB801 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1E8627192C7EA8A8004FB801 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E8627182C7EA8A8004FB801 /* AdvaTaskUI.app */,
+				1E8627292C7EA8AB004FB801 /* AdvaTaskUITests.xctest */,
+				1E8627332C7EA8AB004FB801 /* AdvaTaskUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E86271A2C7EA8A8004FB801 /* AdvaTaskUI */ = {
+			isa = PBXGroup;
+			children = (
+				1E86271B2C7EA8A8004FB801 /* AdvaTaskUIApp.swift */,
+				1E86275C2C7EABE0004FB801 /* Views */,
+				1E0121582C7F44D1007F17EE /* Interactor */,
+				1E01215B2C7F454A007F17EE /* Presenter */,
+				1E8627462C7EA9AE004FB801 /* Entities */,
+				1E01215E2C7F4587007F17EE /* Router */,
+				1E86274C2C7EAABE004FB801 /* Protocols */,
+				1E0121632C7F4602007F17EE /* Assembly */,
+				1E8627492C7EA9C7004FB801 /* NetworkService */,
+				1E86271F2C7EA8AA004FB801 /* Assets.xcassets */,
+				1E8627212C7EA8AA004FB801 /* AdvaTaskUI.entitlements */,
+				1E0121562C7F4118007F17EE /* README.md */,
+				1E8627222C7EA8AA004FB801 /* Preview Content */,
+			);
+			path = AdvaTaskUI;
+			sourceTree = "<group>";
+		};
+		1E8627222C7EA8AA004FB801 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1E8627232C7EA8AA004FB801 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1E86272C2C7EA8AB004FB801 /* AdvaTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1E0121542C7F40EB007F17EE /* PhotoDetailViewTests.swift */,
+				1E0121522C7F40C4007F17EE /* PhotoListViewModelTests.swift */,
+			);
+			path = AdvaTaskUITests;
+			sourceTree = "<group>";
+		};
+		1E8627362C7EA8AB004FB801 /* AdvaTaskUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1E8627372C7EA8AB004FB801 /* AdvaTaskUIUITests.swift */,
+				1E8627392C7EA8AB004FB801 /* AdvaTaskUIUITestsLaunchTests.swift */,
+			);
+			path = AdvaTaskUIUITests;
+			sourceTree = "<group>";
+		};
+		1E8627462C7EA9AE004FB801 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				1E8627472C7EA9AE004FB801 /* Photo.swift */,
+				1E0121612C7F45E6007F17EE /* ViewState.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		1E8627492C7EA9C7004FB801 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				1E86274A2C7EA9C7004FB801 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		1E86274C2C7EAABE004FB801 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1E86274D2C7EAABE004FB801 /* PhotoListViewModel.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1E86275C2C7EABE0004FB801 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1E8627642C7EAC74004FB801 /* Cell */,
+				1E8627632C7EAC6C004FB801 /* Controller */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1E8627632C7EAC6C004FB801 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1E86275D2C7EABF2004FB801 /* PhotoListView.swift */,
+				1E8627612C7EAC46004FB801 /* PhotoDetailView.swift */,
+				1E0121662C7F4763007F17EE /* ZoomableScrollView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1E8627642C7EAC74004FB801 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1E86275F2C7EAC0E004FB801 /* PhotoRowView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E8627172C7EA8A8004FB801 /* AdvaTaskUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E86273D2C7EA8AB004FB801 /* Build configuration list for PBXNativeTarget "AdvaTaskUI" */;
+			buildPhases = (
+				1E8627142C7EA8A8004FB801 /* Sources */,
+				1E8627152C7EA8A8004FB801 /* Frameworks */,
+				1E8627162C7EA8A8004FB801 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdvaTaskUI;
+			packageProductDependencies = (
+				1E0121502C7EBDC8007F17EE /* SDWebImageSwiftUI */,
+			);
+			productName = AdvaTaskUI;
+			productReference = 1E8627182C7EA8A8004FB801 /* AdvaTaskUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1E8627282C7EA8AB004FB801 /* AdvaTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E8627402C7EA8AB004FB801 /* Build configuration list for PBXNativeTarget "AdvaTaskUITests" */;
+			buildPhases = (
+				1E8627252C7EA8AB004FB801 /* Sources */,
+				1E8627262C7EA8AB004FB801 /* Frameworks */,
+				1E8627272C7EA8AB004FB801 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E86272B2C7EA8AB004FB801 /* PBXTargetDependency */,
+			);
+			name = AdvaTaskUITests;
+			productName = AdvaTaskUITests;
+			productReference = 1E8627292C7EA8AB004FB801 /* AdvaTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1E8627322C7EA8AB004FB801 /* AdvaTaskUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E8627432C7EA8AB004FB801 /* Build configuration list for PBXNativeTarget "AdvaTaskUIUITests" */;
+			buildPhases = (
+				1E86272F2C7EA8AB004FB801 /* Sources */,
+				1E8627302C7EA8AB004FB801 /* Frameworks */,
+				1E8627312C7EA8AB004FB801 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E8627352C7EA8AB004FB801 /* PBXTargetDependency */,
+			);
+			name = AdvaTaskUIUITests;
+			productName = AdvaTaskUIUITests;
+			productReference = 1E8627332C7EA8AB004FB801 /* AdvaTaskUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E8627102C7EA8A7004FB801 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					1E8627172C7EA8A8004FB801 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					1E8627282C7EA8AB004FB801 = {
+						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1510;
+						TestTargetID = 1E8627172C7EA8A8004FB801;
+					};
+					1E8627322C7EA8AB004FB801 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 1E8627172C7EA8A8004FB801;
+					};
+				};
+			};
+			buildConfigurationList = 1E8627132C7EA8A7004FB801 /* Build configuration list for PBXProject "AdvaTaskUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E86270F2C7EA8A7004FB801;
+			packageReferences = (
+				1E01214F2C7EBDC8007F17EE /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = 1E8627192C7EA8A8004FB801 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E8627172C7EA8A8004FB801 /* AdvaTaskUI */,
+				1E8627282C7EA8AB004FB801 /* AdvaTaskUITests */,
+				1E8627322C7EA8AB004FB801 /* AdvaTaskUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E8627162C7EA8A8004FB801 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E0121572C7F4118007F17EE /* README.md in Resources */,
+				1E8627242C7EA8AA004FB801 /* Preview Assets.xcassets in Resources */,
+				1E8627202C7EA8AA004FB801 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E8627272C7EA8AB004FB801 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E8627312C7EA8AB004FB801 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E8627142C7EA8A8004FB801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E01215D2C7F4559007F17EE /* Presenter.swift in Sources */,
+				1E0121652C7F460E007F17EE /* Assembly.swift in Sources */,
+				1E8627482C7EA9AE004FB801 /* Photo.swift in Sources */,
+				1E0121602C7F4596007F17EE /* Router.swift in Sources */,
+				1E0121622C7F45E6007F17EE /* ViewState.swift in Sources */,
+				1E8627602C7EAC0E004FB801 /* PhotoRowView.swift in Sources */,
+				1E86274B2C7EA9C7004FB801 /* NetworkService.swift in Sources */,
+				1E0121672C7F4763007F17EE /* ZoomableScrollView.swift in Sources */,
+				1E86275E2C7EABF2004FB801 /* PhotoListView.swift in Sources */,
+				1E86271C2C7EA8A8004FB801 /* AdvaTaskUIApp.swift in Sources */,
+				1E86274E2C7EAABE004FB801 /* PhotoListViewModel.swift in Sources */,
+				1E01215A2C7F450A007F17EE /* Interactor.swift in Sources */,
+				1E8627622C7EAC46004FB801 /* PhotoDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E8627252C7EA8AB004FB801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E0121552C7F40EB007F17EE /* PhotoDetailViewTests.swift in Sources */,
+				1E0121532C7F40C4007F17EE /* PhotoListViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E86272F2C7EA8AB004FB801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E8627382C7EA8AB004FB801 /* AdvaTaskUIUITests.swift in Sources */,
+				1E86273A2C7EA8AB004FB801 /* AdvaTaskUIUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E86272B2C7EA8AB004FB801 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E8627172C7EA8A8004FB801 /* AdvaTaskUI */;
+			targetProxy = 1E86272A2C7EA8AB004FB801 /* PBXContainerItemProxy */;
+		};
+		1E8627352C7EA8AB004FB801 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E8627172C7EA8A8004FB801 /* AdvaTaskUI */;
+			targetProxy = 1E8627342C7EA8AB004FB801 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1E86273B2C7EA8AB004FB801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1E86273C2C7EA8AB004FB801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		1E86273E2C7EA8AB004FB801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AdvaTaskUI/AdvaTaskUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AdvaTaskUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 67569VWZW4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahmoud.AdvaTaskUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1E86273F2C7EA8AB004FB801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AdvaTaskUI/AdvaTaskUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AdvaTaskUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 67569VWZW4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahmoud.AdvaTaskUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1E8627412C7EA8AB004FB801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67569VWZW4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahmoud.AdvaTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdvaTaskUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AdvaTaskUI";
+			};
+			name = Debug;
+		};
+		1E8627422C7EA8AB004FB801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67569VWZW4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahmoud.AdvaTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdvaTaskUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AdvaTaskUI";
+			};
+			name = Release;
+		};
+		1E8627442C7EA8AB004FB801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67569VWZW4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahmoud.AdvaTaskUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AdvaTaskUI;
+			};
+			name = Debug;
+		};
+		1E8627452C7EA8AB004FB801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67569VWZW4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahmoud.AdvaTaskUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AdvaTaskUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E8627132C7EA8A7004FB801 /* Build configuration list for PBXProject "AdvaTaskUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E86273B2C7EA8AB004FB801 /* Debug */,
+				1E86273C2C7EA8AB004FB801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E86273D2C7EA8AB004FB801 /* Build configuration list for PBXNativeTarget "AdvaTaskUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E86273E2C7EA8AB004FB801 /* Debug */,
+				1E86273F2C7EA8AB004FB801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E8627402C7EA8AB004FB801 /* Build configuration list for PBXNativeTarget "AdvaTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E8627412C7EA8AB004FB801 /* Debug */,
+				1E8627422C7EA8AB004FB801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E8627432C7EA8AB004FB801 /* Build configuration list for PBXNativeTarget "AdvaTaskUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E8627442C7EA8AB004FB801 /* Debug */,
+				1E8627452C7EA8AB004FB801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1E01214F2C7EBDC8007F17EE /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1E0121502C7EBDC8007F17EE /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E01214F2C7EBDC8007F17EE /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1E8627102C7EA8A7004FB801 /* Project object */;
+}
